@@ -4,6 +4,7 @@ from uuid import uuid4
 from datetime import datetime
 from models import storage
 
+
 class BaseModel:
     """This class is the Base model for creating and managing instances
         in which all classes shall inherit
@@ -40,7 +41,7 @@ class BaseModel:
             the_dict['updated_at'] = self.updated_at.isoformat()
 
             return the_dict
-        
+
         def save(self):
             """Public instance updated_at becomes updated"""
 
@@ -50,7 +51,5 @@ class BaseModel:
         def __str__(self):
             """Returns official string representation"""
 
-            return "[{}] ({}) {}".\
-            format(type(self).__name__, self.id, self.__dict__)
-
-        
+            return "[{}] ({}) {}".
+        format(type(self).__name__, self.id, self.__dict__)

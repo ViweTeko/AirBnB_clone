@@ -15,7 +15,7 @@ class FileStorage:
     def all(self):
         """Returns the dictionary __objects"""
         return FileStorage.__obects
-    
+
     def attributes(self):
         """Returns valid attributes with their types for classname"""
         attributes = {
@@ -63,7 +63,7 @@ class FileStorage:
         }
 
         return attributes
-    
+
     def classes(self):
         """Returns a dictionary of valid classes with their references"""
 
@@ -85,7 +85,7 @@ class FileStorage:
             "User": User
         }
         return classes
-    
+
     def new(self, obj):
         """Sets in __objects int obj with key <obj class name>.id"""
         key = "{}.{}".format(type(obj).__name__, obj.id)
