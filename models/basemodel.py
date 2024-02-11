@@ -51,5 +51,5 @@ class BaseModel:
         def __str__(self):
             """Returns official string representation"""
 
-            return "[{}] ({}) {}".
+            return "[{}] ({}) {}".\
         format(type(self).__name__, self.id, self.__dict__)
