@@ -2,7 +2,7 @@
 
 """This module creates a User class"""
 
-from models.basemodel import BaseModel
+from models.base_model import BaseModel
 
 
 class User(BaseModel):

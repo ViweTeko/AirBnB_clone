@@ -68,7 +68,7 @@ class FileStorage:
         """Returns a dictionary of valid classes with their references"""
 
         from models.amenity import Amenity
-        from models.basemodel import BaseModel
+        from models.base_model import BaseModel
         from models.city import City
         from models.place import Place
         from models.review import Review

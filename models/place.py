@@ -2,7 +2,7 @@
 
 """This module contains a class for Place"""
 
-from models.basemodel import BaseModel
+from models.base_model import BaseModel
 
 
 class Place(BaseModel):
