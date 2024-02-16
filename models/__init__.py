@@ -4,5 +4,5 @@
 
 from models.engine.file_storage import FilesStorage
 
-storage = FilesStorage()
+storage = FileStorage()
 storage.reload()
